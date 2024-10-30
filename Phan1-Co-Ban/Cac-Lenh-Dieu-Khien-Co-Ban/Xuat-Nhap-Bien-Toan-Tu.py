@@ -93,3 +93,179 @@ print("Loai 1 gom " + str(x%500%200%100%50%20%10%5%2//1) + " to")
 a = x//500 + x%500//200 + x%500%200//100 + x%500%200%100//50 + x%500%200%100%50//20 + x%500%200%100%50%20//10
 b = x%500%200%100%50%20%10%5%2//1 + x%500%200%100%50%20%10%5//2 + x%500%200%100%50%20%10//5 
 print("TỔNG CỘNG CÓ " + str(a + b) + " TỜ")
+#Cau truc dieu kien
+# BAI TAP 15 
+# CAU A
+n = int(input("Nhap so n: "))
+if( n % 2 == 0):
+    print("n la so chan")
+else:
+    print("n la so le")
+# CAU B
+n = int(input("Nhap so n: "))
+if( n % 4 % 2 == 0):
+    print("n chia chan cho 4")
+elif(n % 2 % 2 == 0):
+    print("n chia chan cho 2")
+else:
+    print("n khong chia chan cho 2 va 4")
+# CAU C
+n = int(input("Nhap so bi chia: "))
+m = int(input("Nhap so chia: "))
+if( (n / m) % 2 == 0 ):
+    print("n chia chan cho m")
+else:
+    print("n khong chia chan cho m")
+# BAI TAP 16
+x = int(input("Nhap so tien: "))
+print("So tien " + str(x) + " duoc doi thanh: ")
+print("Loai 500 gom " + str(x//500) + " to")
+if(x%500//200 > 0):
+    print("Loai 200 gom " + str(x%500//200) + " to")
+if(x%500%200//100 > 0):
+    print("Loai 100 gom " + str(x%500%200//100) + " to")
+if(x%500%200//100 > 0):
+    print("Loai 50 gom " + str(x%500%200%100//50) + " to")
+if(x%500%200%100%50//20 > 0):
+    print("Loai 20 gom " + str(x%500%200%100%50//20) + " to")
+if(x%500%200%100%50%20//10 > 0):
+    print("Loai 10 gom " + str(x%500%200%100%50%20//10) + " to")    
+if(x%500%200%100%50%20%10//5 > 0):
+    print("Loai 5 gom " + str(x%500%200%100%50%20%10//5) + " to")
+if(x%500%200%100%50%20%10%5//2 > 0):
+    print("Loai 2 gom " + str(x%500%200%100%50%20%10%5//2) + " to")
+if(x%500%200%100%50%20%10%5%2//1 > 0):
+    print("Loai 1 gom " + str(x%500%200%100%50%20%10%5%2//1) + " to")
+a = x//500 + x%500//200 + x%500%200//100 + x%500%200%100//50 + x%500%200%100%50//20 + x%500%200%100%50%20//10
+b = x%500%200%100%50%20%10%5%2//1 + x%500%200%100%50%20%10%5//2 + x%500%200%100%50%20%10//5 
+print("TỔNG CỘNG CÓ " + str(a + b) + " TỜ")
+# Mo rong
+a = int(input("Nhap so tien hang can phai tra: "))
+b = int(input("Nhap so tien thuc te khach hang tra cho nhan vien: "))
+if(a > b):
+    print("So tien tra la cho khac" + str(b-a))
+elif(a == b):
+    print("Cam on khach hang. Hen gap lai")
+else:
+    x = b - a
+    print("So tien " + str(x) + " duoc doi thanh: ")
+    print("Loai 500 gom " + str(x//500) + " to")
+    if(x%500//200 > 0):
+        print("Loai 200 gom " + str(x%500//200) + " to")
+    if(x%500%200//100 > 0):
+        print("Loai 100 gom " + str(x%500%200//100) + " to")
+    if(x%500%200//100 > 0):
+        print("Loai 50 gom " + str(x%500%200%100//50) + " to")
+    if(x%500%200%100%50//20 > 0):
+        print("Loai 20 gom " + str(x%500%200%100%50//20) + " to")
+    if(x%500%200%100%50%20//10 > 0):
+        print("Loai 10 gom " + str(x%500%200%100%50%20//10) + " to")    
+    if(x%500%200%100%50%20%10//5 > 0):
+        print("Loai 5 gom " + str(x%500%200%100%50%20%10//5) + " to")
+    if(x%500%200%100%50%20%10%5//2 > 0):
+        print("Loai 2 gom " + str(x%500%200%100%50%20%10%5//2) + " to")
+    if(x%500%200%100%50%20%10%5%2//1 > 0):
+        print("Loai 1 gom " + str(x%500%200%100%50%20%10%5%2//1) + " to")
+    a = x//500 + x%500//200 + x%500%200//100 + x%500%200%100//50 + x%500%200%100%50//20 + x%500%200%100%50%20//10
+    b = x%500%200%100%50%20%10%5%2//1 + x%500%200%100%50%20%10%5//2 + x%500%200%100%50%20%10//5 
+    print("TỔNG CỘNG CÓ " + str(a + b) + " TỜ")
+    input("Nhan Enter de tiep tuc....")
+    print("Cam on khach hang. Hen gap lai")
+# BAI TAP 17
+diem = int(input("Nhap diem: "))
+if(diem < 0 or diem > 100):
+    print("Chi nhan cac gia tri tu 0 den 100")
+else:
+    if( diem >= 90):
+        print("Xep loai: A")
+    elif( diem >= 80 and diem < 90):
+        print("Xep loai: B")
+    elif( diem >= 70 and diem < 80):
+        print("Xep loai: C")
+    elif( diem >= 65 and diem < 70):
+        print("Xep loai: D")
+    else:
+        print("Xep loai: E")
+# BAI TAP 18
+n = int(input("NHap n: "))
+if(n == 1):
+    print("I")
+elif(n == 2):
+    print("II")
+elif(n == 3):
+    print("III")
+elif(n == 4):
+    print("IV")
+elif(n == 5):
+    print("V")
+elif(n == 6):
+    print("VI")
+elif(n == 7):
+    print("VII")
+elif(n == 8):
+    print("VIII")
+elif(n == 9):
+    print("IX")
+else:
+    print("X")
+# BAI TAP 19
+a = float(input("Nhap can nang: "))
+b = float(input("Nhap chieu cao: "))
+c = a / b**2
+if( c < 18.5):
+    print("Thieu can")
+elif(c >= 18.5 and c < 23):
+    print("Binh thuong")
+elif(c >= 23 and c < 25):
+    print("Binh thuong")
+else:
+    print("Beo phi")
+# BAI TAP 20
+# BAI TAP 21
+a, b = map(int, input("Nhap a, b").split())
+if( a == 0):
+    print("Phuong trinh vo nghiem")
+elif( a == 0 and b == 0):
+    print("Phuong trinh vo so nghiem")
+else:
+    c = -b//a
+    print("Phuong trinh co nghiem: " + str(c))
+# BAI TAP 22
+import math
+a, b, c = map(int, input("Nhap a, b, c: ").split())
+delta = b**2 - (4*a*c)
+if(delta == 0):
+    print("Phuong trinh co nghiem kep" + str(-b/2*a))
+if(delta < 0):
+    print("Phuong trinh vo nghiem")
+else:
+    nghiem1 = (-b + math.sqrt(delta)) / (2*a)
+    nghiem2 = (-b - math.sqrt(delta)) / (2*a)
+    print("Phuong trinh co nghiem x1 = {}, x2 = {}".format(nghiem1, nghiem2))
+# BAI TAP 23
+xA, yA = map(int, input("Nhap xA, yA: ").split())
+xB, yB = map(int, input("Nhap xB, yB: ").split())
+xC, yC = map(int, input("Nhap xC, yC: ").split())
+xP, yP = map(int, input("Nhap xP, yP: ").split())
+x1 = (xB - xA) * (yP - yA) - (yB - yA) * (xP - xA)
+x2 = (xC - xB) * (yP - yB) - (yC - yB) * (xP - xB)
+x3 = (xA - xC) * (yP - yC) - (yA - yC) * (xP - xC)
+if( x1 > 0 and x2 > 0 and x3 > 0):
+    print("P nam trong tam giac ABC")
+else:
+    print("P khon nam trong tam gia ABC")
+# BAI TAP 24
+# BAI TAP 25
+a, b, c, d, e, f = map(int, input("Nhap cac so a, b, c, d, e, f: ").split())
+d1 = a * e - b * d
+d1X = c * e - b * f
+d1Y = a * f - d * c
+if d1 != 0:
+    print("x = {}; y = {}".format(d1X/d1, d1Y/d1))
+elif d1Y != 0 and d1X != 0:
+    print("Phuong trinh vo nghiem")
+else:
+    print("Phuong trinh vo so nghiem")
+# BAI TAP 26
+# CAU A
+# CAU B

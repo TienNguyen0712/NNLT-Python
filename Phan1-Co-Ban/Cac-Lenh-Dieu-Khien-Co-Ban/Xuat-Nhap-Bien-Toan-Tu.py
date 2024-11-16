@@ -279,4 +279,14 @@ elif (b/a) == (c/b):
 else:
     print("Khong co cap so nhan")
 # CAU B
+a = int(input("Nhap so a: "))
+b = int(input("Nhap so b: "))
+c = int(input("Nhap so c: "))
+
+if abs(b - a) == abs(c - b):
+    print("Co the tao thanh cap so cong")
+elif (b/a) == (c/b):
+    print("Co the tao thanh cap so nhan: ")
+else:
+    print("Khong co cap so nhan")
 

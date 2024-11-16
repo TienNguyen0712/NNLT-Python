@@ -255,6 +255,26 @@ if( x1 > 0 and x2 > 0 and x3 > 0):
 else:
     print("P khon nam trong tam gia ABC")
 # BAI TAP 24
+import math as m
+
+x1 = int(input("Nhap toa do x C1: "))
+y1 = int(input("Nhap toa do y C1: "))
+r1 = int(input("Nhap ban kinh C1: "))
+x2 = int(input("Nhap toa do x C2: "))
+y2 = int(input("Nhap toa do y C2: "))
+r2 = int(input("Nhap ban kinn C2: "))
+
+if m.sqrt(y2-y1**2 + x2-x1**2) > r1 + r1:
+    print("Hai duong tron khong giao nhau")
+if m.sqrt(y2-y1**2 + x2-x1**2) == r1 + r1:
+    print("Hai duong tron tiep xuc nhau")
+if abs(r2-r1) < m.sqrt(y2-y1**2 + x2-x1**2) < r1 + r1:
+    print("Hai duong tron cat nhau")
+if m.sqrt(y2-y1**2 + x2-x1**2) < r1 + r1:
+    print("Hai duong tron chua trong nhau")
+if m.sqrt(y2-y1**2 + x2-x1**2) < abs(r1 - r1):
+    print("Hai duong tron nam trong nhau")
+
 # BAI TAP 25
 a, b, c, d, e, f = map(int, input("Nhap cac so a, b, c, d, e, f: ").split())
 d1 = a * e - b * d

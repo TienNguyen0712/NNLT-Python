@@ -268,4 +268,15 @@ else:
     print("Phuong trinh vo so nghiem")
 # BAI TAP 26
 # CAU A
+a = int(input("Nhap so a: "))
+b = int(input("Nhap so b: "))
+c = int(input("Nhap so c: "))
+
+if abs(b - a) == abs(c - b):
+    print("So tiep theo trong cap so cong: " + str(max(a, b, c) + abs(b - a)))
+elif (b/a) == (c/b):
+    print("So tiep theo trong cap so nhan: " + str(max(a, b, c) * (c//b)))
+else:
+    print("Khong co cap so nhan")
 # CAU B
+

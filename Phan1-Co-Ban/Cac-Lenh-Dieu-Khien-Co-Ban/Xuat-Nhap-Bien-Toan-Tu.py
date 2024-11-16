@@ -348,4 +348,21 @@ for i in range(1, n + 1):
     if i % 2 != 0 and i > max:
         max = i
 print(max)
-
+# BAI TAP 28
+n = int(input("Nhap so luong so can in: "))
+a = int(input("Nhap so bat dau: "))
+d = int(input("Nhap cong sai: "))
+count = 0
+for a in range(a, 100):
+    count+=1
+    if count <= n:
+        print(a + d)
+# BAI TAP 29
+n = int(input("Nhap so luong so can in: "))
+a = int(input("Nhap so bat dau: "))
+d = int(input("Nhap cong boi: "))
+count = 0
+for a in range(a, 100):
+    count+=1
+    if count <= n:
+        print(a * d)

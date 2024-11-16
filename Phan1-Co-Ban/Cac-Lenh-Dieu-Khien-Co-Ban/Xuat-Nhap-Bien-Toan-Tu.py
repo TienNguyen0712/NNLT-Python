@@ -309,4 +309,43 @@ elif (b/a) == (c/b):
     print("Co the tao thanh cap so nhan: ")
 else:
     print("Khong co cap so nhan")
+# Cau truc lap
+# BAI TAP 27
+n = int(input("Nhap so n: "))
+# CAU A
+for i in range(1, n + 1): print(i)
+# CAU B
+for i in range(1, n + 1):
+    if (5 * i) % 5 == 0:
+        print(i) 
+# CAU C\
+    sum = 0
+for i in range(1, n + 1):
+        sum+=i
+print(sum)
+# CAU D
+s = 0
+for i in range(1, n + 1):
+    if i % 2 == 0:
+        s+= i
+print(s) 
+# CAU E
+tong = 0;
+for i in range(1, n + 1):
+    if i % n == 0:
+        tong+=i;
+        print(i)
+print(tong)
+# CAU F
+max = 0
+for i in range(1, n + 1):
+    if i % 2 == 0 and i > max:
+        max = i
+print(max)
+# CAU G
+max1 = 0;
+for i in range(1, n + 1):
+    if i % 2 != 0 and i > max:
+        max = i
+print(max)
 

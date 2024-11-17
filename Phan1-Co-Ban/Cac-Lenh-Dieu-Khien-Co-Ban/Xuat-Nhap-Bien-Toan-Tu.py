@@ -533,3 +533,43 @@ if a > b:
     for x in range(b, a + 1):
         for y in range(1, 11):
             print("{} x {} = {}".format(x, y, x*y))
+# BAI TAP 37
+n = int(input("Nhap so n: "))
+sum = 0
+tich = 1
+while n != 0:
+    sum+= n % 10
+    tich*= n % 10
+    n//=10
+print("Tong la: ", sum)
+print("Tich la: ", tich)
+# BAI TAP 38
+n = int(input("Nhap so n: "))
+d1 = 0
+d2 = 0
+while n != 0:
+    n//=10
+    if n % 2 == 0:
+        d1+=1
+    else:
+        d2+=1
+print("So luong so chan: ", d1)
+print("So luong so le: ", d2)
+# BAI TAP 39
+n = int(input("Nhap so n: "))
+max  = 0
+while n != 0:
+    n//=10
+    if n % 10 > max:
+        max = n % 10
+print("So lon nhat trong n: ", max)
+# BAI TAP 40
+n = int(input("Nhap so n: "))
+max  = 0
+dem = 0
+while n != 0:
+    if n % 10 > max:
+        max = n % 10
+        dem+=1
+    n//=10
+print("Co {} so lon nhat: ".format(dem + 1))

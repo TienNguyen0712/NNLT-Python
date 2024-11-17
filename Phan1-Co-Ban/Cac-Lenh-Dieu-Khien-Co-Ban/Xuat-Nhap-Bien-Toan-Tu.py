@@ -459,7 +459,6 @@ while True:
         if ask == "n":
             break    
 # BAI TAP 31
-# C
 m = int(input("Nhap so m: "))
 n = int(input("Nhap so m: "))
 c = 0
@@ -469,5 +468,27 @@ for i in range(1, m):
         c+=1
 if c == 0:
     print("Khong co uoc so nao cua n nho hon m")
-         
-         
+# BAI TAP 32
+# CAU A
+n = int(input("Nhap vao so n: "))
+s = int(input("Nhap vao so S: "))
+sum = 0
+for i in range(1 , n + 1):
+    sum+=i
+print("Con bo mang so hieu thu {} bi lac".format(sum - s))
+# CAU B
+n = int(input("Nhap vao so n: "))
+s = int(input("Nhap vao so S: "))
+sum = n * (n + 1)//2
+print("Con bo mang so hieu thu {} bi lac".format(sum - s))
+# CAU C
+n = int(input("Nhap so luong bo: "))
+s = int(input("Nhap vao tong cac so hieu: "))
+k = int(input("Nhap vao so luong du doan bo bi that lac: "))
+sum = (n * (n + 1)//2) - s
+c = 0
+for i in range(1, n):
+    tong = sum - i
+    c+=1
+    if c <= k:
+        print("Truong hop {}: {} bo bi mat co so hieu la: {} va {}".format(c, k, tong, n - tong))

@@ -367,6 +367,7 @@ for a in range(a, 100):
     if count <= n:
         print(a * d)
 # BAI TAP 30
+# CAU A
 while True:    
     a = int(input("Nhap vao so thu nhat: "))
     b = int(input("Nhap vao so thu hai: "))
@@ -411,3 +412,50 @@ while True:
         ask = input("Ban co muon tiep tuc (y/n): ")
         if ask == "n":
             break    
+# CAU B
+import operator as o
+while True:    
+    a = int(input("Nhap vao so thu nhat: "))
+    b = int(input("Nhap vao so thu hai: "))
+    opt = input("Nhap phep tinh: ")
+    if opt == "+" :
+        print("{} + {} = {} ".format(a, b, o.add(a, b)))
+        ask = input("Ban co muon tiep tuc (y/n): ")
+        if ask == "n":
+            break
+    if opt == "-" :
+        print("{} - {} = {} ".format(a, b, o.sub(a, b)))
+        ask = input("Ban co muon tiep tuc (y/n): ")
+        if ask == "n":
+            break
+    if opt == "*" :
+        print("{} * {} = {} ".format(a, b, o.mul(a, b)))
+        ask = input("Ban co muon tiep tuc (y/n): ")
+        if ask == "n":
+            break
+    if opt == "/" :
+        print("{} / {} = {} ".format(a, b, o.truediv(a, b)))
+        ask = input("Ban co muon tiep tuc (y/n): ")
+        if ask == "n":
+            break
+    if opt == "%" :
+        print("{} % {} = {} ".format(a, b, o.mod(a, b)))
+        ask = input("Ban co muon tiep tuc (y/n): ")
+        if ask == "n":
+            break
+    if opt == "^" :
+        print("{} ^ {} = {} ".format(a, b, o.pow(a, b)))
+        ask = input("Ban co muon tiep tuc (y/n): ")
+        if ask == "n":
+            break
+    if opt == "<<" :
+        print("{} << {} = {} ".format(a, b, o.lt(a, b)))
+        ask = input("Ban co muon tiep tuc (y/n): ")
+        if ask == "n":
+            break
+    if opt == ">>" :
+        print("{} >> {} = {} ".format(a, b, o.ge(a, b)))
+        ask = input("Ban co muon tiep tuc (y/n): ")
+        if ask == "n":
+            break    
+# BAI TAP 31

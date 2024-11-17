@@ -459,3 +459,13 @@ while True:
         if ask == "n":
             break    
 # BAI TAP 31
+m = int(input("Nhap so m: "))
+n = int(input("Nhap so m: "))
+c = 0
+for i in range(1, m):
+    if i % 2  == 0:
+        print("Uoc so chan nho hon m: " + str(i))
+        c+=1
+    if c == 0:
+        print("Khong co uoc so nao cua n nho hon m")
+         

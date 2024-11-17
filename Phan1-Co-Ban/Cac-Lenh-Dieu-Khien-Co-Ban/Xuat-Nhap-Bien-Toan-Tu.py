@@ -366,3 +366,48 @@ for a in range(a, 100):
     count+=1
     if count <= n:
         print(a * d)
+# BAI TAP 30
+while True:    
+    a = int(input("Nhap vao so thu nhat: "))
+    b = int(input("Nhap vao so thu hai: "))
+    opt = input("Nhap phep tinh: ")
+    if opt == "+" :
+        print("{} + {} = {} ".format(a, b, a + b))
+        ask = input("Ban co muon tiep tuc (y/n): ")
+        if ask == "n":
+            break
+    if opt == "-" :
+        print("{} - {} = {} ".format(a, b, a - b))
+        ask = input("Ban co muon tiep tuc (y/n): ")
+        if ask == "n":
+            break
+    if opt == "*" :
+        print("{} * {} = {} ".format(a, b, a * b))
+        ask = input("Ban co muon tiep tuc (y/n): ")
+        if ask == "n":
+            break
+    if opt == "/" :
+        print("{} / {} = {} ".format(a, b, a / b))
+        ask = input("Ban co muon tiep tuc (y/n): ")
+        if ask == "n":
+            break
+    if opt == "%" :
+        print("{} % {} = {} ".format(a, b, a % b))
+        ask = input("Ban co muon tiep tuc (y/n): ")
+        if ask == "n":
+            break
+    if opt == "^" :
+        print("{} ^ {} = {} ".format(a, b, a ** b))
+        ask = input("Ban co muon tiep tuc (y/n): ")
+        if ask == "n":
+            break
+    if opt == "<<" :
+        print("{} << {} = {} ".format(a, b, a << b))
+        ask = input("Ban co muon tiep tuc (y/n): ")
+        if ask == "n":
+            break
+    if opt == ">>" :
+        print("{} >> {} = {} ".format(a, b, a >> b))
+        ask = input("Ban co muon tiep tuc (y/n): ")
+        if ask == "n":
+            break    

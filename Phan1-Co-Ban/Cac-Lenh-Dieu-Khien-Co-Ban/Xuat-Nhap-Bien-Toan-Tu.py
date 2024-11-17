@@ -492,3 +492,15 @@ for i in range(1, n):
     c+=1
     if c <= k:
         print("Truong hop {}: {} bo bi mat co so hieu la: {} va {}".format(c, k, tong, n - tong))
+# BAI TAP 33
+a = int(input("Nhap so a: "))
+b = int(input("Nhap so b: "))
+# CACH 1
+for i in range(a , b + 1):
+    if i % 3 != 0:
+        print(i)
+# CACH 2
+for i in range(a, b + 1):
+    if i % 3 == 0:
+        continue
+    print(i)

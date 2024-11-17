@@ -519,3 +519,17 @@ while True:
     if int(b) == a:
         print("Doan chinh xac")
         break
+# BAI TAP 35
+n = int(input("Nhap bang cuu chuong so: "))
+for i in range (1, 11):
+    print("{} x {} = {}".format(n, i, n * i))
+# BAI TAP 36
+a, b = map(int , input("Nhap so a, b: ").split(","))
+
+for i in range(a, b + 1):
+    for j in range(1, 11):
+        print( "{} x {} = {}".format(i , j, i*j))
+if a > b:
+    for x in range(b, a + 1):
+        for y in range(1, 11):
+            print("{} x {} = {}".format(x, y, x*y))

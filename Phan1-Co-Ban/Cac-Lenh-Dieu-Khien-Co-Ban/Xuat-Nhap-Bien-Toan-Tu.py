@@ -504,3 +504,18 @@ for i in range(a, b + 1):
     if i % 3 == 0:
         continue
     print(i)
+# BAI TAP 34
+import random
+# CAU A # CAU B # CAU C
+a = random.randint(1, 9)
+while True:
+    b = input("Nhap so doan: ")
+    if b == "exit":
+        break
+    if int(b) > a:
+        print("So can doan cao hon ket qua {} don vi".format(int(b) - a ))
+    if int(b) < a:
+        print("So can doan nho hon ket qua {} don vi".format(a - int(b)))
+    if int(b) == a:
+        print("Doan chinh xac")
+        break

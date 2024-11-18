@@ -573,3 +573,31 @@ while n != 0:
         dem+=1
     n//=10
 print("Co {} so lon nhat: ".format(dem + 1))
+# BAI TAP 41
+n = input("Nhap so n: ")
+d = ''
+for x in n:
+    if x == "-":
+        d = "am"
+    if x == "0":
+        d = "khong"
+    if x == "1":
+        d = "mot"
+    if x == "2":
+        d = "hai"
+    if x == "3":
+        d = "ba"
+    if x == "4":
+        d = "bon"
+    if x == "5":
+        d = "nam"
+    if x == "6":
+        d = "sau"
+    if x == "7":
+        d = "bay"
+    if x == "8":
+        d = "tam"
+    if x == "9":
+        d = "chin"
+    print(d, end=" ")
+# BAI TAP 42

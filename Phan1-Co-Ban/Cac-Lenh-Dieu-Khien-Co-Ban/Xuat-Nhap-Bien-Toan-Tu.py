@@ -601,3 +601,61 @@ for x in n:
         d = "chin"
     print(d, end=" ")
 # BAI TAP 42
+def sophongphu(a):
+    sum = 0
+    for i in range(1, a):
+        if a % i == 0:
+            sum+=i
+    if sum > a:
+        return True
+def sohoanthien(a):
+    s = 0
+    for i in range(1, a):
+        if a % i == 0:
+            s+=i
+    if s == a:
+        return True
+def solocphat(a):
+    for x in str(a):
+        if x == "6" and x == "8":
+            return True
+def somayman(a):
+    import math
+    sum = 0
+    while n != 0:
+        n = math.pow(a, 2)
+        sum+= pow(n % 10, 2)
+    n//=10
+    if a == 1:
+        return True
+
+def main():
+    # CAU A
+    n = int(input("Nhap vao so n: "))
+    for i in range(1, n):
+        if sophongphu(i):
+            print(i, end=", ")
+    # CAU B
+    for j in range(1, n):
+        if sohoanthien(i):
+            print(i, end=", ")
+    # CAU C
+    for z in range(1, n):
+        if solocphat(z):
+            print(z, end=", ")
+    # CAU D can sua lai ( sai logic )
+    for x in range(1, n + 1):
+        if somayman(x):
+            print(x, end=", ")
+if __name__ == "__main__":
+    main()
+# BAI TAP 43
+n = int(input("Nhap vao so n: "))
+count  = 0
+for i in range(1, n + 1):
+    if n % i == 0:
+        count+=1
+if count == 2:
+    print("n la so nguyen to")
+else:
+    print("n khong phai la so nguyen to")

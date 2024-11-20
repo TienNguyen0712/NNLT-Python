@@ -659,3 +659,22 @@ if count == 2:
     print("n la so nguyen to")
 else:
     print("n khong phai la so nguyen to")
+# BAI TAP 44 
+def sont(a):
+    c = 0
+    for i in range(1, a+1):
+        if a % i == 0:
+            c+=1
+    if c == 2:
+        return True
+    else:
+        return False
+
+def main():
+    n = int(input("Nhap n: "))
+    for i in range(1, n + 1):
+        if sont(i):
+            print(i, end=" ")
+
+if __name__ == "__main__":
+    main()

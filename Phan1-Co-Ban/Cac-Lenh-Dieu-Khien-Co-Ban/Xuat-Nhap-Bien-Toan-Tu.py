@@ -780,3 +780,4 @@ n  = int(input("Nhap n: "))
 re = phan_tich(n)
 print(n, end=" = ")
 print(*re, sep=" * ")
+# BAI TAP 50

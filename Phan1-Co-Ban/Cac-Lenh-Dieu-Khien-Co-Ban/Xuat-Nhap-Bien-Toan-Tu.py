@@ -763,3 +763,20 @@ def main():
 
 if __name__ == "__main__":
     main()
+# BAI TAP 49
+def phan_tich(n):
+    arr = []
+    i = 2
+    while i * i <= n:
+        while n % i == 0:
+            arr.append(i)
+            n//= i
+        i+= 1
+    if n > 1:
+        arr.append(n)
+    return arr
+
+n  = int(input("Nhap n: "))
+re = phan_tich(n)
+print(n, end=" = ")
+print(*re, sep=" * ")

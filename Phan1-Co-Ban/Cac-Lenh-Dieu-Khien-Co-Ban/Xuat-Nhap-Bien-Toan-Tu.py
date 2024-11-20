@@ -711,12 +711,55 @@ def sont(a):
 
 def main():
     n = int(input("Nhap n: "))
+    c = 0
+    for i in range(1, n + 1):
+        if sont(i):
+            c+=1
+    print(c)
+
+if __name__ == "__main__":
+    main()
+# BAI TAP 47
+def sont(a):
+    c = 0
+    for i in range(1, a+1):
+        if a % i == 0:
+            c+=1
+    if c == 2:
+        return True
+    else:
+        return False
+
+def main():
+    n = int(input("Nhap n: "))
     max = 0
     for i in range(1, n):
         if sont(i):
             if i > max:
                 max = i
     print(max)
+
+if __name__ == "__main__":
+    main()
+# BAI TAP 48
+def sont(a):
+    c = 0
+    for i in range(1, a+1):
+        if a % i == 0:
+            c+=1
+    if c == 2:
+        return True
+    else:
+        return False
+
+def main():
+    n = int(input("Nhap n: "))
+    min = 10000
+    for i in range(n + 1, n * 10):
+        if sont(i):
+            if i < min:
+                min = i
+    print(min)
 
 if __name__ == "__main__":
     main()

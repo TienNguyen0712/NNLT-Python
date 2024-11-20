@@ -698,3 +698,25 @@ def main():
 
 if __name__ == "__main__":
     main()
+# BAI TAP 46
+def sont(a):
+    c = 0
+    for i in range(1, a+1):
+        if a % i == 0:
+            c+=1
+    if c == 2:
+        return True
+    else:
+        return False
+
+def main():
+    n = int(input("Nhap n: "))
+    max = 0
+    for i in range(1, n):
+        if sont(i):
+            if i > max:
+                max = i
+    print(max)
+
+if __name__ == "__main__":
+    main()

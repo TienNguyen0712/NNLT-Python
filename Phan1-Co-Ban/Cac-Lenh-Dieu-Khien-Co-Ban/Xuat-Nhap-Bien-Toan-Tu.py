@@ -781,3 +781,12 @@ re = phan_tich(n)
 print(n, end=" = ")
 print(*re, sep=" * ")
 # BAI TAP 50
+# BAI TAP 51
+# CAU A
+n = int(input("Nhap n: "))
+fib_list = [0, 1]
+a, b = 0, 1
+while b <= n:
+    a, b = b, a + b
+    fib_list.append(b)
+print(*fib_list, sep=" ")
